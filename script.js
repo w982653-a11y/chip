@@ -1023,58 +1023,42 @@ function initShop() {
     const products = [
         {
             id: 1,
-            name: "智能水质监测仪 Pro",
-            description: "高精度水质监测设备，支持多参数实时检测，内置AI分析系统。",
-            price: 8999,
+            name: "转盘式多芯片搭载装置",
+            description: "定价比2000元/台（含免费配套服务：智能手环+虚拟仿真平台）。",
+            price: 2000,
             category: "equipment",
-            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20quality%20monitoring%20device%2C%20scientific%20equipment%2C%20blue%20and%20white%20design%2C%20professional%20appearance&image_size=landscape_4_3"
+            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=rotary%20multi-chip%20mounting%20device%2C%20scientific%20equipment%2C%20blue%20and%20white%20design%2C%20professional%20appearance&image_size=landscape_4_3"
         },
         {
             id: 2,
-            name: "便携式水质检测器",
-            description: "轻便易携的水质检测设备，适合现场快速检测，支持数据导出。",
-            price: 2499,
+            name: "水体原位监测仪",
+            description: "定价2000元/台（不含传感器选配），作为高级监测平台的配套硬件。",
+            price: 2000,
             category: "equipment",
-            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=portable%20water%20quality%20tester%2C%20handheld%20device%2C%20modern%20design%2C%20blue%20display&image_size=landscape_4_3"
+            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20quality%20in-situ%20monitor%2C%20scientific%20equipment%2C%20modern%20design%2C%20blue%20display&image_size=landscape_4_3"
         },
         {
             id: 3,
-            name: "水质传感器探头",
-            description: "高精度水质传感器探头，适用于多种水质参数检测，使用寿命长。",
-            price: 1299,
-            category: "accessories",
-            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20quality%20sensor%20probe%2C%20scientific%20instrument%2C%20stainless%20steel%20design&image_size=landscape_4_3"
-        },
-        {
-            id: 4,
-            name: "水质监测系统解决方案",
-            description: "完整的水质监测系统解决方案，包括硬件设备、软件平台和数据分析。",
-            price: 29999,
+            name: "高级实时监测平台（年费）",
+            description: "功能包括AI污染识别、水质预测、多站点管理、智能报告生成、大模型问答、API接口等。年费700元/年。",
+            price: 700,
             category: "solutions",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20quality%20monitoring%20system%20dashboard%2C%20data%20visualization%2C%20modern%20interface&image_size=landscape_4_3"
         },
         {
-            id: 5,
-            name: "水样采集套件",
-            description: "专业水样采集套件，包括采样瓶、保存剂和操作指南，确保采样准确性。",
-            price: 499,
-            category: "accessories",
-            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20sample%20collection%20kit%2C%20scientific%20equipment%2C%20professional%20tools&image_size=landscape_4_3"
-        },
-        {
-            id: 6,
-            name: "水质检测咨询服务",
-            description: "专业的水质检测咨询服务，包括方案设计、数据分析和报告生成。",
-            price: 5999,
+            id: 4,
+            name: "高级实时监测平台（终身买断）",
+            description: "功能包括AI污染识别、水质预测、多站点管理、智能报告生成、大模型问答、API接口等。2400元终身买断。",
+            price: 2400,
             category: "solutions",
-            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20quality%20consulting%20service%2C%20professional%20team%2C%20data%20analysis&image_size=landscape_4_3"
+            image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=water%20quality%20monitoring%20system%20dashboard%2C%20data%20visualization%2C%20modern%20interface&image_size=landscape_4_3"
         },
         // Chip products
         {
-            id: 7,
+            id: 5,
             name: "Au/ND/C₃N₄ 复合基底芯片",
             description: "检测四环素，检测限10⁻¹² M，自清洁功能，稳定性好。",
-            price: 1999,
+            price: 100,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20blue%20and%20silver%20design&image_size=landscape_4_3",
             pollutants: ["tetracycline"],
@@ -1083,10 +1067,10 @@ function initShop() {
             features: "自清洁：可见光6h降解率97.3%；稳定性：30天信号保留84.8%；增强因子EF=6.67×10⁶"
         },
         {
-            id: 8,
+            id: 6,
             name: "UL-AuAgMSs@β-CD 复合基底芯片",
             description: "检测毒死蜱、有机磷农药、结晶紫等，检测限10⁻¹³ M。",
-            price: 2499,
+            price: 166,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20green%20and%20silver%20design&image_size=landscape_4_3",
             pollutants: ["chlorpyrifos", "crystal-violet", "methylene-blue", "methyl-orange"],
@@ -1095,10 +1079,10 @@ function initShop() {
             features: "海胆状金银微米颗粒+β-CD分子识别；RSD=9.10% (n=13)；21天信号保留73.35%；可检测多种有机磷农药"
         },
         {
-            id: 9,
+            id: 7,
             name: "Au/CCN-NWs/Al 芯片",
             description: "检测联苯胺，检测限1 μg/L，电增强吸附，120秒快速富集。",
-            price: 1799,
+            price: 100,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20purple%20and%20silver%20design&image_size=landscape_4_3",
             pollutants: ["benzidine"],
@@ -1107,10 +1091,10 @@ function initShop() {
             features: "电增强吸附，120秒快速富集；RSD=9.11% (n=100)；回收率95.55%~109.46%"
         },
         {
-            id: 10,
+            id: 8,
             name: "Au/PCPCN 芯片",
             description: "检测福美双、结晶紫，检测限10⁻¹¹ M，级联内建电场。",
-            price: 2199,
+            price: 166,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20red%20and%20silver%20design&image_size=landscape_4_3",
             pollutants: ["thiram", "crystal-violet"],
@@ -1119,10 +1103,10 @@ function initShop() {
             features: "磷掺杂晶态/非晶态聚合氮碳，级联内建电场；EF=5.53×10⁵；5周信号保留91.1%"
         },
         {
-            id: 11,
+            id: 9,
             name: "Au-SnO₂ resonator 芯片",
             description: "检测环丙沙星，光捕获结构增强SERS，适用于水环境抗生素残留检测。",
-            price: 1899,
+            price: 100,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20yellow%20and%20silver%20design&image_size=landscape_4_3",
             pollutants: ["ciprofloxacin"],
@@ -1131,10 +1115,10 @@ function initShop() {
             features: "光捕获结构增强SERS，适用于水环境抗生素残留检测"
         },
         {
-            id: 12,
+            id: 10,
             name: "Ag@ZnS 核壳结构芯片",
             description: "检测4-氨基苯硫酚、罗丹明6G、亚甲基蓝，检测限10⁻⁸ M。",
-            price: 2299,
+            price: 100,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20blue%20and%20gold%20design&image_size=landscape_4_3",
             pollutants: ["4-atp", "rhodamine-6g", "methylene-blue"],
@@ -1143,10 +1127,10 @@ function initShop() {
             features: "核壳结构抑制Ag氧化；28天信号保留79.5%；RSD<5.50% (n=16)"
         },
         {
-            id: 13,
+            id: 11,
             name: "Au@Hg-C₃N₄ 芯片",
             description: "检测L-半胱氨酸、D-半胱氨酸，双模式检测(SERS+SALDI-MS)。",
-            price: 2599,
+            price: 166,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20silver%20and%20white%20design&image_size=landscape_4_3",
             pollutants: ["cysteine"],
@@ -1155,10 +1139,10 @@ function initShop() {
             features: "双模式检测（SERS+SALDI-MS），可区分手性对映体；RSD=12.37%"
         },
         {
-            id: 14,
+            id: 12,
             name: "BDD 电极芯片",
             description: "检测铅离子(Pb²⁺)，检测限2.62 ppb，电位窗口2.2 V，抗干扰能力强。",
-            price: 1699,
+            price: 66,
             category: "chips",
             image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=microchip%20for%20water%20quality%20testing%2C%20scientific%20equipment%2C%20black%20and%20silver%20design&image_size=landscape_4_3",
             pollutants: ["lead"],
@@ -1199,17 +1183,16 @@ function initShop() {
         cart.forEach(item => {
             const product = products.find(p => p.id === item.id);
             if (product) {
-                const itemTotal = product.price * item.quantity;
+                // Use the price stored in the cart item if available (for products with price options)
+                const itemPrice = item.price || product.price;
+                const itemTotal = itemPrice * item.quantity;
                 total += itemTotal;
                 
                 cartHTML += `
                     <div class="cart-item">
-                        <div class="cart-item-image">
-                            <img src="${product.image}" alt="${product.name}">
-                        </div>
                         <div class="cart-item-info">
                             <div class="cart-item-title">${product.name}</div>
-                            <div class="cart-item-price">¥${product.price.toLocaleString()}</div>
+                            <div class="cart-item-price">¥${itemPrice.toLocaleString()}</div>
                             <div class="cart-item-quantity">
                                 <button class="quantity-btn decrease" data-id="${item.id}">-</button>
                                 <input type="number" value="${item.quantity}" min="1" data-id="${item.id}">
@@ -1291,24 +1274,35 @@ function initShop() {
     document.querySelectorAll('.add-to-cart').forEach(btn => {
         btn.addEventListener('click', function() {
             const id = parseInt(this.dataset.id);
-            const existingItem = cart.find(item => item.id === id);
+            const product = products.find(p => p.id === id);
             
-            if (existingItem) {
-                existingItem.quantity++;
-            } else {
-                cart.push({ id, quantity: 1 });
+            if (product) {
+                // Check if there are price options
+                let price = product.price;
+                if (product.priceOptions && product.priceOptions.length > 0) {
+                    // Default to the first price option (annual fee)
+                    price = product.priceOptions[0].price;
+                }
+                
+                const existingItem = cart.find(item => item.id === id);
+                
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ id, quantity: 1, price: price });
+                }
+                
+                updateCart();
+                
+                // Show success message
+                this.textContent = '已加入购物车';
+                this.style.background = '#4CAF50';
+                
+                setTimeout(() => {
+                    this.textContent = '加入购物车';
+                    this.style.background = '';
+                }, 2000);
             }
-            
-            updateCart();
-            
-            // Show success message
-            this.textContent = '已加入购物车';
-            this.style.background = '#4CAF50';
-            
-            setTimeout(() => {
-                this.textContent = '加入购物车';
-                this.style.background = '';
-            }, 2000);
         });
     });
     
@@ -1416,9 +1410,6 @@ function initShop() {
                 
                 recommendationHTML += `
                     <div class="recommendation-item">
-                        <div class="recommendation-item-image">
-                            <img src="${chip.image}" alt="${chip.name}">
-                        </div>
                         <div class="recommendation-item-info">
                             <div class="recommendation-item-title">${chip.name}</div>
                             <div class="recommendation-item-description">${chip.description}</div>
@@ -1483,13 +1474,28 @@ function initShop() {
                 // Update modal content
                 document.getElementById('modalTitle').textContent = '产品详情';
                 document.getElementById('modalProductName').textContent = product.name;
-                document.getElementById('modalImage').src = product.image;
-                document.getElementById('modalImage').alt = product.name;
-                document.getElementById('modalPrice').textContent = `¥${product.price.toLocaleString()}`;
+                
+                // Update price section
+                const modalPriceElement = document.getElementById('modalPrice');
+                if (product.priceOptions && product.priceOptions.length > 0) {
+                    let priceHTML = '<div class="price-options">';
+                    product.priceOptions.forEach((option, index) => {
+                        priceHTML += `
+                            <div class="price-option">
+                                <input type="radio" id="price-option-${index}" name="price-option" value="${option.price}" ${index === 0 ? 'checked' : ''}>
+                                <label for="price-option-${index}">${option.name}: ¥${option.price} ${option.period}</label>
+                            </div>
+                        `;
+                    });
+                    priceHTML += '</div>';
+                    modalPriceElement.innerHTML = priceHTML;
+                } else {
+                    modalPriceElement.textContent = `¥${product.price.toLocaleString()}`;
+                }
                 
                 // Update chip-specific details
                 if (product.category === 'chips') {
-                    document.getElementById('modalProductId').textContent = product.id - 6; // Adjust for chip numbering
+                    document.getElementById('modalProductId').textContent = product.id - 4; // Adjust for chip numbering
                     document.getElementById('modalDetectionTarget').textContent = getDetectionTarget(product);
                     document.getElementById('modalPollutantType').textContent = product.type || '未知';
                     document.getElementById('modalDetectionLimit').textContent = product.detectionLimit || '待补充';
@@ -1524,24 +1530,36 @@ function initShop() {
     // Add to cart from modal
     modalAddToCart.addEventListener('click', function() {
         if (currentProductId) {
-            const existingItem = cart.find(item => item.id === currentProductId);
-            
-            if (existingItem) {
-                existingItem.quantity++;
-            } else {
-                cart.push({ id: currentProductId, quantity: 1 });
+            const product = products.find(p => p.id === currentProductId);
+            if (product) {
+                // Check if there are price options
+                let price = product.price;
+                if (product.priceOptions && product.priceOptions.length > 0) {
+                    const selectedOption = document.querySelector('input[name="price-option"]:checked');
+                    if (selectedOption) {
+                        price = parseInt(selectedOption.value);
+                    }
+                }
+                
+                const existingItem = cart.find(item => item.id === currentProductId);
+                
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ id: currentProductId, quantity: 1, price: price });
+                }
+                
+                updateCart();
+                
+                // Show success message
+                modalAddToCart.textContent = '已加入购物车';
+                modalAddToCart.style.background = '#4CAF50';
+                
+                setTimeout(() => {
+                    modalAddToCart.textContent = '加入购物车';
+                    modalAddToCart.style.background = '';
+                }, 2000);
             }
-            
-            updateCart();
-            
-            // Show success message
-            modalAddToCart.textContent = '已加入购物车';
-            modalAddToCart.style.background = '#4CAF50';
-            
-            setTimeout(() => {
-                modalAddToCart.textContent = '加入购物车';
-                modalAddToCart.style.background = '';
-            }, 2000);
         }
     });
     
